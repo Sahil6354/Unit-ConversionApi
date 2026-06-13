@@ -27,6 +27,10 @@ The Unit Conversion API is a production-quality ASP.NET Core 8 RESTful Web API d
 - Middleware-based Exception Handling
 
 ## Getting Started
+- dotnet build
+Expected:
+- Build succeeded
+
 1. **Clone the repository**:
    ```bash
    git clone <repository-url>
@@ -144,3 +148,9 @@ UnitConversionApi/
 ├── .editorconfig                # .NET coding style conventions
 └── README.md                    # Project documentation
 ```
+## Assumptions and Trade-offs
+
+- Units are stored in-memory and hardcoded for this assessment.
+- No database is required.
+- Authentication is intentionally omitted because it is not part of the assignment.
+- The registry design allows future migration to database-backed unit configuration.
